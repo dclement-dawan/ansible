@@ -3,4 +3,4 @@
   user : root
   tasks :
     - name : Test pull 
-      copy : dest=/etc/motd content="Hello wolrd !"
+      copy : dest=/etc/motd content="Hello world !"
