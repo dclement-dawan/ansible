@@ -1,6 +1,8 @@
-- hosts : localhost
-  gather_facts : yes
-  user : root
-  tasks :
-    - name : Test pull 
-      copy : dest=/etc/motd content="Hello world !"
+- hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Test pull 
+      copy: 
+        dest: ~/Pull.txt
+        content: "Hello world !"
